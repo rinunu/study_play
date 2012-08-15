@@ -1,0 +1,19 @@
+GET   /lists/:id          controllers.Basic.details(id)
+
+GET   /lists          controllers.Basic.list(page: Int ?= 1)
+
+GET   /json          controllers.Basic.json()
+
+
+GET   /enumerator          controllers.Async.enumerator()
+
+
+PUT /session controllers.Sessions.save(value)
+GET /session controllers.Sessions.get
+
+
+GET /static controllers.Statics.static
+
+
+
+GET /assets/*file   controllers.Assets.at(path="/public", file)
